@@ -6,7 +6,7 @@ A plug-in for GIMP 3 that toggles layer visibility according to patterns specifi
 
 ## Installation
 
-Place the entire folder into GIMPfs plug-in directory.
+Place the entire folder into GIMP's plug-in directory.
 
 The folder name must match the script name:
 `toggle-layers-by-pattern`
@@ -18,10 +18,11 @@ The plug-in determines layer visibility by parsing pattern indices embedded in l
 
 Append pattern index(es) to each layer name, delimited by a colon.  
 To specify a range of integers instead of a single integer, concatenate the start and end indices with a hyphen.  
-Multiple indices can be specified, delimited by commas.
+Multiple indices can be specified, delimited by commas.  
+Extra text after indices is ignored.
 
 Example:  
-"Background layer:0", "Foreground layer:1,3-5"
+"Background layer:0", "Foreground layer:1,3-5 Copy"
 
 Select **Layer -> Toggle Layers by Pattern** from the main menu to open the dialog.  
 Specify a pattern index in the dialog and click **OK** to update the layer visibility.
