@@ -19,7 +19,7 @@ The plug-in determines layer visibility by parsing pattern indices embedded in l
 Append pattern index(es) to each layer name, delimited by a colon.  
 To specify a range of integers instead of a single integer, concatenate the start and end indices with a hyphen.  
 Multiple indices can be specified, delimited by commas.  
-Extra text after indices is ignored.
+Any extra text after indices is ignored.
 
 Example:  
 "Background layer:0", "Foreground layer:1,3-5 Copy"
