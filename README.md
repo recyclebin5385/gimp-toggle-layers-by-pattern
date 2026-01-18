@@ -3,6 +3,7 @@
 ## Summary
 
 A plug-in for GIMP 3 that toggles layer visibility according to patterns specified by the user.
+This plug-in provides a workflow similar to Layer Comps in other graphic editors.
 
 ## Installation
 
@@ -31,6 +32,23 @@ Specify a pattern index in the dialog and click **OK** to update the layer visib
 
 This project is licensed under the BSD 2-Clause License.  
 See the LICENSE file for details.
+
+## Version
+
+Current version: **0.1.0**
+
+The official version is defined by the Git tag on GitHub.
+This plug-in is distributed as source code only.
+
+## Changelog
+
+### 0.1.0 - 2026-01-19
+
+- Added recursive processing of layers inside layer groups
+
+### 0.0.1 - 2026-01-17
+
+- Initial release
 
 ## Copyright
 

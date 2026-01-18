@@ -81,10 +81,9 @@ class ToggleLayersByPattern(Gimp.PlugIn):
         )
 
 def iter_layers(parent, depth=0):
-    for layer in parent.get_layers():
+    for layer in parent.get_layers() if isinstance(parent, Gimp.Image) else parent.get_children():
         yield layer
-        if isinstance(layer, Gimp.GroupLayer):
-            yield from iter_layers(layer, depth + 1)
+        yield from iter_layers(layer, depth + 1)
 
 def extract_index_ranges_from_name(name):
     m = re.search(NAME_INDEXES_PATTERN, name)
